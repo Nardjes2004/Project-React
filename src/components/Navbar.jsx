@@ -3,9 +3,9 @@ import React from 'react'
 export default function Navbar() {
   return (
 <header className="sticky top-0 bg-white shadow-[0_4px_6px_rgba(0,0,0,0.4)] py-2">
-    <nav className="flex justify-between items-center max-w-screen-lg mx-auto">
+    <nav className="flex items-center justify-between max-w-screen-lg mx-auto">
         <img 
-            className="w-16 rounded-lg grayscale transition ease-in-out duration-300 hover:scale-110 hover:grayscale-0" 
+            className="w-16 transition duration-300 ease-in-out rounded-lg grayscale hover:scale-110 hover:grayscale-0" 
             src="/Logo.png" 
             alt="Logo"
         />
