@@ -1,5 +1,6 @@
 import React from 'react'
 import { Product } from '../data/data'
+import { Link } from 'react-router-dom'
 
 export default function ProductsList() {
   return (
@@ -7,12 +8,19 @@ export default function ProductsList() {
       
     
       {Product.map((item) => (
-          <div key={item.id} className="p-4 border rounded"> {/* Add a unique key for each item */}
-            <img src={item.img} alt={item.title } className="w-full h-auto mb-2" />
-            <h2 className="font-bold">{item.title || "Unnamed Product"}</h2>
-            <p>{item.description || "No description available"}</p>
-            <p>Stocked: {item.stocked}</p>
-            <p>Price: {item.price}</p>
+          <div className="shadow-xl rounded-tl-2xl rounded-tr-2xl"> {/* Add a unique key for each item */}
+             <img  className="w-full transition-transform bg-gray-200 rounded-tl-2xl rounded-tr-2xl hover:scale-110" src={item.img} alt={item.title } />
+             <div className='p-3'>
+                <h2 className="text-lg font-semibold line-clamp-1">{item.title}</h2>
+                <div className='flex justify-between my-2'>
+                  <h4 className='text-lg text-semibold '>{item.price}<span className='text-sm'>$</span></h4>
+                  <h4 className='text-sm bg-gring-gray-200 py-0.5 px-3 rounded-full'> {item.stocked  ? "Instock" :"Sold Out"}</h4>
+                </div>
+              <div>
+              <button className="mt-4 btn"><Link to='/shop/:id'>Show details</Link></button>
+              <button className="mt-4 btn"><Link to='/chechout/:ids'>Add to cart</Link></button>
+              </div>
+             </div>
           </div>
         ))}
 
