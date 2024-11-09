@@ -11,7 +11,7 @@ export default function Navbar() {
             alt="Logo"
         /></Link>
         <ul className="flex gap-10 list-none cursor-pointer">
-            <li className="text-lg font-semibold hover:underline ">Home</li>
+            <li className="text-lg font-semibold hover:underline "><Link to='/shop'>Home</Link></li>
             <li className="text-lg font-semibold hover:underline "><Link to='/chechout/:ids'>Checkout</Link></li>
             <li className="text-lg font-semibold hover:underline "><Link to='/shop'>Shop</Link></li>
         </ul>

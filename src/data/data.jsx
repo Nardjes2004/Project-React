@@ -7,7 +7,7 @@ export const Product = [
       "These iconic aviator sunglasses feature a sleek metal frame and tinted lenses, providing 100% UV protection while elevating your style with a classic, timeless look.",
     stocked: true,
     price: 12,
-    images: ["", "", ""],
+    images: [],
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ export const Product = [
       "Modern, stylish frames with lenses designed to reduce blue light exposure from screens. Perfect for extended screen time, providing comfort and protecting your eyes from strain.",
     stocked: false,
     price: 15,
-    images: ["", "", ""],
+    images: [],
   },
   {
     id: 3,
@@ -37,7 +37,7 @@ export const Product = [
       "Spacious and versatile, this tote bag is made from genuine leather and is perfect for carrying everyday essentials in style.",
     stocked: false,
     price: 30,
-    images: ["", "", ""],
+    images: [],
   },
   {
     id: 5,
@@ -47,7 +47,7 @@ export const Product = [
       "Spacious and versatile, this tote bag is made from genuine leather and is perfect for carrying everyday essentials in style.",
     stocked: true,
     price: 29.99,
-    images: ["", "", ""],
+    images: [],
   },
   {
     id: 6,
@@ -67,7 +67,7 @@ export const Product = [
       " Add a touch of timeless elegance to your outfit with this classic fedora.",
     stocked: true,
     price: 13,
-    images: ["", "", ""],
+    images: [],
   },
   {
     id: 8,
@@ -90,7 +90,7 @@ export const Product = [
     description: "Perfect for layering and adding a cool edge to your look.",
     stocked: true,
     price: 40,
-    images: [, , ,],
+    images: [],
   },
   {
     id: 10,
@@ -100,7 +100,7 @@ export const Product = [
       "Stay warm with this insulated puffer jacket, crafted for comfort in colder weather. Lightweight yet cozy, with a water-resistant exterior and available in a variety of colors.",
     stocked: true,
     price: 50,
-    images: ["", "", ""],
+    images: [],
   },
   {
     id: 11,
@@ -120,7 +120,7 @@ export const Product = [
       " A comfortable, soft cotton T-shirt with a classic crew neckline and a relaxed fit, available in various colors.",
     stocked: true,
     price: 22,
-    images: ["public/images/RED TSHIRT 2.jpg"],
+    images: ["/images/RED TSHIRT 2.jpg"],
   },
   {
     id: 13,
@@ -144,7 +144,7 @@ export const Product = [
       "A stylish T-shirt with unique printed designs, crafted from breathable, lightweight cotton. Adds a touch of personality to any outfit and is perfect for expressing your individual style.",
     stocked: true,
     price: 32,
-    images: ["", "", ""],
+    images: [],
   },
   {
     id: 15,
@@ -154,7 +154,7 @@ export const Product = [
       "A comfortable, soft cotton T-shirt with a classic crew neckline and a relaxed fit, available in various colors. Perfect for layering or wearing solo for a casual look.",
     stocked: true,
     price: 20,
-    images: ["public/images/TSHIRT MINI CACTUS 7.jpg"],
+    images: ["/images/TSHIRT MINI CACTUS 7.jpg"],
   },
   {
     id: 16,
@@ -164,7 +164,7 @@ export const Product = [
       "A comfortable, soft cotton T-shirt with a classic crew neckline and a relaxed fit, available in various colors. Perfect for layering or wearing solo for a casual look.",
     stocked: true,
     price: 10.99,
-    images: ["", "", ""],
+    images: [],
   },
   {
     id: 17,
@@ -174,7 +174,7 @@ export const Product = [
       "A stylish T-shirt with unique printed designs, crafted from breathable, lightweight cotton. Adds a touch of personality to any outfit and is perfect for expressing your individual style.",
     stocked: true,
     price: 19,
-    images: ["", "", ""],
+    images: [],
   },
   {
     id: 18,
@@ -184,7 +184,7 @@ export const Product = [
       "Stylish and versatile slim-fit jeans crafted from soft, stretch denim for ultimate comfort.",
     stocked: false,
     price: 20,
-    images: ["public/images/JEANS2 1.jpg", "", ""],
+    images: ["/images/JEANS2 1.jpg"],
   },
   {
     id: 19,
@@ -194,7 +194,7 @@ export const Product = [
       "Comfortable and stylish chino pants with a tailored fit, perfect for work or casual outings.",
     stocked: false,
     price: 12,
-    images: ["", "", ""],
+    images: [],
   },
   {
     id: 20,
@@ -214,7 +214,7 @@ export const Product = [
       "Comfortable and stylish chino pants with a tailored fit, perfect for work or casual outings.",
     stocked: true,
     price: 26,
-    images: ["", "", ""],
+    images: [],
   },
   {
     id: 22,
@@ -224,6 +224,6 @@ export const Product = [
       "Soft and luxurious, this cashmere scarf provides warmth and elegance, ideal for chilly weather.",
     stocked: true,
     price: 9.99,
-    images: ["/images/SCARK BEG 1.jpg", "", ""],
+    images: ["/images/SCARK BEG 1.jpg"],
   },
 ];

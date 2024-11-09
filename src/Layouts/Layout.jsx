@@ -9,7 +9,7 @@ export default function Layout() {
     <div className='flex flex-col justify-between min-h-screen'>
       
       <Navbar />
-      <main className='flex-grow my-16 '>
+      <main className='flex-grow mx-16 my-16'>
         <Outlet />
       </main>
       <Footer />

@@ -5,19 +5,20 @@ import ProductSingle from "./pages/ProductSingle";
 import Layout from "./Layouts/Layout";
 import Products from "./pages/Products";
 
+
 function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={Layout} >
-             <Route path="/shop" element={Products} />
-             <Route path="/shop/:id" element={ProductSingle} />
-             <Route path="/chechout/:ids" element={Checkout} />
+          <Route path="/" element={<Layout/>} >
+             <Route path="/shop" element={<Products/>} />
+             <Route path="/shop/:id" element={<ProductSingle/>} />
+             <Route path="/checkout/:ids" element={<Checkout/>} />
           </Route>
         </Routes>
       </BrowserRouter>
-    </>
+      </>
   );
 }
 
