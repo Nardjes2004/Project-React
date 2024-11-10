@@ -62,7 +62,7 @@ export default function Checkout() {
       <div className="w-1/3 p-4 border border-gray-300 rounded-md">
         <h3 className="mb-4 text-2xl font-semibold">Order Summary</h3>
         <div className="space-y-4">
-          {Product.map((item) => (
+          {selectedProducts.map((item) => (
             <div key={item.id} className="flex flex-col w-full gap-2">
               <img
                 className="bg-gray-100 border border-black h-96"
