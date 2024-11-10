@@ -204,7 +204,7 @@ export const Product = [
       "Comfortable and stylish chino pants with a tailored fit, perfect for work or casual outings.",
     stocked: true,
     price: 20,
-    images: ["/images/SPORT PANTS 2.jpg", "", ""],
+    images: ["/images/SPORT PANTS 2.jpg"],
   },
   {
     id: 21,

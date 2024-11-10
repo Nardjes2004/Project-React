@@ -51,7 +51,7 @@ export default function Checkout() {
           />
           <button
             type="submit"
-            className="w-full p-2 mt-4 text-white bg-blue-500 rounded-md btn"
+            className="w-full text-white bg-blue-700 rounded-md btn"
           >
             Confirm Order
           </button>
@@ -62,15 +62,15 @@ export default function Checkout() {
       <div className="w-1/3 p-4 border border-gray-300 rounded-md">
         <h3 className="mb-4 text-2xl font-semibold">Order Summary</h3>
         <div className="space-y-4">
-          {Product.map((product) => (
-            <div key={product.id} className="flex flex-col w-full gap-2">
+          {Product.map((item) => (
+            <div key={item.id} className="flex flex-col w-full gap-2">
               <img
                 className="bg-gray-100 border border-black h-96"
-                src={product.img}
-                alt={product.title}
+                src={item.img}
+                alt={item.title}
               />
-              <h1 className="text-2xl font-bold">{product.title}</h1>
-              <p className="text-lg">{product.price}</p>
+              <h1 className="text-2xl font-bold">{item.title}</h1>
+              <p className="text-lg">{item.price} <span className="text-base font-normal">$</span></p>
             </div>
           ))}
         </div>
