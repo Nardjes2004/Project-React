@@ -1,13 +1,25 @@
-import React from 'react'
-import { Product } from '../data/data'
+import axios from 'axios';
+import React, { useEffect, useState } from 'react'
+// import { Product } from '../data/data'
 import { Link } from 'react-router-dom'
 
 export default function ProductsList() {
+const [products,setProducts] =useState([]);
+
+ useEffect(() =>{
+        axios.get('http://localhost:8000/api/products/get_all_products')
+            .then((response) =>{
+              console.log(response.data.response)
+                setProducts(response.data.response);
+            });
+    }, []);
+    
+  
   return (
     <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3"> 
       
     
-    {Product.map((item) => (
+    {products && products.length > 0 ? (products.map((item) => (
         <div className="shadow-xl rounded-tl-2xl rounded-tr-2xl"> {/* Add a unique key for each item */}
            <img  className="w-full bg-gray-200 h-96 trasition-transform rounded-tl-2xl rounded-tr-2xl hover:scale-110" src={item.img} alt={item.title } />
            <div className="p-3">
@@ -22,7 +34,9 @@ export default function ProductsList() {
             </div>
            </div>
         </div>
-      ))}
+      )) ): (
+        <p>Loading products...</p>
+      )}
   </div>
   )
 }

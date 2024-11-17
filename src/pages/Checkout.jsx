@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { Product } from "../data/data";
+// import { Product } from "../data/data";
 
 export default function Checkout() {
   const { ids } = useParams(); // Retrieve the comma-separated IDs from the URL
